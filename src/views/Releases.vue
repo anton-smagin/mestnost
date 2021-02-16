@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div class="releases">
     <div class="container">
       <p-5-sketch
-        image-title="mestnost_logo"
+        image-title="anderdog"
         class="p5-sketch justify-content-center align-items-center"
       />
     </div>
@@ -14,13 +14,9 @@
 import P5Sketch from '@/components/P5Sketch.vue'
 
 export default {
-  name: 'Home',
+  name: 'Releases',
   components: {
     P5Sketch
   }
 }
 </script>
-
-<style scoped>
-
-</style>
