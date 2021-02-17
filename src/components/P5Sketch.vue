@@ -50,7 +50,7 @@ export default {
     side() {
       let width = window.innerWidth;
       let height = window.innerHeight;
-      return Math.min(width, height) * 0.5;
+      return Math.min(width, height) * 0.4;
     },
   },
   methods: {

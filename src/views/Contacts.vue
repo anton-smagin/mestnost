@@ -1,5 +1,13 @@
 <template>
   <div class="contacts">
-    <h1>This is an contacts page</h1>
+    <div class="container">
+      <h1>МЕСТНОСТЬ</h1>
+    </div>
   </div>
 </template>
+
+<style scoped>
+h1 {
+  color: white;
+}
+</style>
