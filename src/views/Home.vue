@@ -1,14 +1,10 @@
 <template>
-  <div class="home">
-    <div class="container-fluid h-100">
-      <div class="d-flex justify-content-center align-items-center min-vh-100">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-white logo">МЕСТНОСТЬ</h1>
-          </div>
-          <div class="col-md-12">
-            <h3 class="text-white">Label, established in Moscow</h3>
-          </div>
+  <div class="home h80">
+    <div class="container-fluid h80">
+      <div class="d-flex align-items-center h80">
+        <div class="col-md-12">
+          <h1 class="text-white logo w-100">МЕСТНОСТЬ</h1>
+          <h3 class="text-white">Label, established in Moscow</h3>
         </div>
       </div>
     </div>
@@ -21,11 +17,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .logo {
-    margin-bottom: 20%;
-    font-size: 5em;
-    font-weight: lighter;
+    font-size: 3em;
+    font-weight: normal;
     letter-spacing: 1em;
+    margin-bottom: 10%;
+    @media only screen and (max-width: 768px) {
+      font-size: 2em;
+      letter-spacing: 0.1em;
+    }
   }
 </style>

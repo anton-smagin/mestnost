@@ -2,12 +2,48 @@
   <div id="app">
     <div class="w-100">
       <div id="nav" class="row justify-content-end">
-        <router-link class="btn" to="/">Home</router-link> |
-        <router-link class="btn" to="/about">About</router-link>
-        <router-link class="btn" to="/releases">Releases</router-link>
-        <router-link class="btn" to="/contacts">Contacts</router-link>
+        <img
+          class="hamburger d-block d-sm-none"
+          src="~@/assets/white-hamburger.png"
+          width="30px"
+          height="30px"
+          alt=""
+          @click="menuShow = !menuShow"
+        >
+        <transition name="fade">
+          <div class="row" v-if="menuShow">
+            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+              <router-link class="btn" to="/" >Home</router-link>
+            </div>
+            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+              <router-link class="btn" to="/about" >About</router-link>
+            </div>
+            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+              <router-link class="btn" to="/releases">Releases</router-link>
+            </div>
+            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+              <router-link class="btn" to="/contacts">Contacts</router-link>
+            </div>
+          </div>
+        </transition>
+        <div class="col-sm-2 d-none d-sm-block">
+          <router-link class="btn" to="/">Home</router-link>
+        </div>
+        <div class="col-sm-2 d-none d-sm-block">
+          <router-link class="btn" to="/about">About</router-link>
+        </div>
+        <div class="col-sm-2 d-none d-sm-block">
+          <router-link class="btn" to="/releases">Releases</router-link>
+        </div>
+        <div class="col-sm-2 d-none d-sm-block">
+          <router-link class="btn" to="/contacts">Contacts</router-link>
+        </div>
       </div>
-      <router-view class="row" />
+      <div class="h80">
+        <div class="col-xs-12 h80">
+          <router-view />
+        </div>
+      </div>
       <footer class="d-flex justify-content-start">
         <a
           class="btn text-white"
@@ -35,7 +71,18 @@
   </div>
 </template>
 
-<style>
+<script>
+export default {
+  name: 'Home',
+  data() {
+    return {
+      menuShow: false,
+    }
+  },
+}
+</script>
+
+<style lang="scss">
 @font-face {
   font-family: 'Cocomat';
   src: url('~@/assets/fonts/Cocomat.ttf');
@@ -59,7 +106,8 @@
 body {
   min-height: 100vh;
   margin: 0;
-  overflow: hidden; /* Hide scrollbars */
+  background: url('~@/assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 #app {
@@ -70,24 +118,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: url('~@/assets/background.jpg') no-repeat center center fixed;
-  background-size: cover;
   min-height: 100vh;
 }
 
 #nav {
   padding: 30px;
-
+  min-height: 10vh;
 }
 
 #nav a {
-  font-weight: bold;
   color: #f5fafa;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: lighter;
 }
 
 #nav a.router-link-exact-active {
   color: #91a79d;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.h80 {
+  min-height: 80vh;
 }
 
 .button {
@@ -95,7 +149,7 @@ body {
 }
 
 footer {
-  position: fixed;
+  min-height: 10vh;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -104,5 +158,16 @@ footer {
 
 footer a.btn {
   font-size: 1.5em;
+  @media only screen and (max-width: 768px) {
+    letter-spacing: 0.1em;
+    font-size: 1em;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
