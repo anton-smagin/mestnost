@@ -2,26 +2,28 @@
   <div id="app">
     <div class="w-100">
       <div id="nav" class="row justify-content-end">
-        <img
-          class="hamburger d-block d-sm-none"
-          src="~@/assets/white-hamburger.png"
-          width="30px"
-          height="30px"
-          alt=""
-          @click="menuShow = !menuShow"
-        >
+        <div class="d-flex w-100 justify-content-end">
+          <img
+            class="hamburger d-block d-sm-none"
+            src="~@/assets/white-hamburger.png"
+            width="30px"
+            height="30px"
+            alt=""
+            @click="menuShow = !menuShow"
+          >
+        </div>
         <transition name="fade">
-          <div class="row" v-if="menuShow">
-            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+          <div class="d-sm-none row" v-if="menuShow">
+            <div class="col-sm-12" @click="menuShow = false">
               <router-link class="btn" to="/" >Home</router-link>
             </div>
-            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+            <div class="col-sm-12" @click="menuShow = false">
               <router-link class="btn" to="/about" >About</router-link>
             </div>
-            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+            <div class="col-sm-12" @click="menuShow = false">
               <router-link class="btn" to="/releases">Releases</router-link>
             </div>
-            <div class="col-md-2 col-xs-6" @click="menuShow = false">
+            <div class="col-sm-12" @click="menuShow = false">
               <router-link class="btn" to="/contacts">Contacts</router-link>
             </div>
           </div>
@@ -128,8 +130,12 @@ body {
 
 #nav a {
   color: #f5fafa;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: lighter;
+  @media only screen and (max-width: 768px) {
+    letter-spacing: 0.1em;
+    font-size: 1em;
+  }
 }
 
 #nav a.router-link-exact-active {
