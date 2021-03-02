@@ -49,7 +49,7 @@
       <footer class="d-flex justify-content-start">
         <a
           class="btn text-white"
-          href="https://t.me/svora_vkusovshina"
+          href="https://t.me/mestnost_label"
           target="_blank"
         >
           telegram
@@ -110,6 +110,8 @@ body {
   margin: 0;
   background: url('~@/assets/background.jpg') no-repeat center center fixed;
   background-size: cover;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #app {
@@ -134,7 +136,6 @@ body {
   font-weight: lighter;
   @media only screen and (max-width: 768px) {
     letter-spacing: 0.1em;
-    font-size: 1em;
   }
 }
 
@@ -163,10 +164,9 @@ footer {
 }
 
 footer a.btn {
-  font-size: 1.5em;
+  font-size: 1em;
   @media only screen and (max-width: 768px) {
     letter-spacing: 0.1em;
-    font-size: 1em;
   }
 }
 

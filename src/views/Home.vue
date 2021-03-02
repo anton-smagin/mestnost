@@ -4,7 +4,6 @@
       <div class="d-flex align-items-center h80">
         <div class="col-md-12">
           <h1 class="text-white logo w-100">МЕСТНОСТЬ</h1>
-          <h3 class="text-white">Label, established in Moscow</h3>
         </div>
       </div>
     </div>

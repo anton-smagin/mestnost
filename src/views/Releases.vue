@@ -3,50 +3,43 @@
     <div class="container">
       <div class="row p-5">
         <template v-for="release in releases" >
-          <p-5-sketch
-            :key="`${release.name}.sketch`"
-            image-title="anderdog"
-            class="p5-sketch align-items-center col-md-5"
-          />
-          <div class="col-md-5 text-white" :key="`${release.name}.description`">
-            <p
-              v-for="text in release.description"
-              :key="text"
-              class="description"
+          <router-link :key="`${release.name}.sketch`" class="btn" to="/releases/AnderdogSleepParalysis">
+            <div
+
+              class="col-md-6 col-xs-12 sketch"
               @click="openReleasePage(release.name)"
             >
-              {{ text }}
-            </p>
-          </div>
+              <p-5-sketch
+                image-title="anderdog"
+                class="p5-sketch align-items-center"
+              />
+              <div class="text-white" :key="`${release.name}.description`">
+                <p class="description">{{ release.artistName }}</p>
+                <p class="description">{{ release.releaseName }}</p>
+              </div>
+            </div>
+          </router-link>
         </template>
       </div>
     </div>
-    <release-page
-      v-show="showReleasePage"
-      :page="releasePage"
-      @close="showReleasePage = false"
-    />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import P5Sketch from '@/components/P5Sketch.vue'
-import ReleasePage from '@/components/ReleasePage.vue'
+// import ReleasePage from '@/components/ReleasePage.vue'
 
 export default {
   name: 'Releases',
   components: {
     P5Sketch,
-    ReleasePage
+   // ReleasePage
   },
   data() {
     return {
      releases: [
-       {
-        name: 'anderdog',
-        description: ['Anderdog', 'Sleep Paralysis:', 'Если бы Aphex Twin родился в Электростали'],
-      },
+       { name: 'releases/AnderdogSleepParalysis', artistName: 'Anderdog', releaseName: 'Sleep Paralysis', },
      ],
      releasePage: null,
      showReleasePage: false,
@@ -63,9 +56,10 @@ export default {
 
 <style scoped lang="scss">
   .description {
-    font-size: 2em;
+    font-size: 1em;
     font-style: bold;
     cursor: pointer;
+    white-space: nowrap;
     &:hover {
       color: #91a79d;
     }
