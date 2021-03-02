@@ -92,8 +92,7 @@ export default {
 body {
   min-height: 100vh;
   margin: 0;
-  background: url('~@/assets/background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: black !important;
   max-width: 100%;
   overflow-x: hidden;
 }

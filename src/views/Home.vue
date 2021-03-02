@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.home {
+  background: url('~@/assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
 .logo {
   font-size: 3em;
   font-weight: normal;

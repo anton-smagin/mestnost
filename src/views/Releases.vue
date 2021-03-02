@@ -5,12 +5,12 @@
         <template v-for="release in releases" >
           <router-link :key="`${release.name}.sketch`" class="btn" to="/releases/AnderdogSleepParalysis">
             <div
-              class="col-md-6 col-xs-12 sketch"
+              class="col-md-6 col-xs-12 sketch align-items-center"
               @click="openReleasePage(release.name)"
             >
               <p-5-sketch
                 image-title="anderdog"
-                class="p5-sketch align-items-center"
+                class="p5-sketch"
               />
               <div class="text-white" :key="`${release.name}.description`">
                 <p class="description">{{ release.artistName }}</p>
@@ -56,11 +56,15 @@ export default {
 <style scoped lang="scss">
   .description {
     font-size: 1em;
-    font-style: bold;
+    font-weight: bold;
     cursor: pointer;
     white-space: nowrap;
     &:hover {
       color: #91a79d;
     }
+  }
+
+  .sketch {
+    width: 80%;
   }
 </style>
