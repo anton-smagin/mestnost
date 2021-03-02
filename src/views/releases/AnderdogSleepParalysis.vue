@@ -9,14 +9,15 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="mt-5">
-          <h5 class="text-white release-name">Anderdog - <span class="text-nowrap">Sleep Paralysis</span></h5>
+          <h5 class="text-white release-name">Anderdog</h5>
+          <h5 class="text-white"><span class="text-nowrap">Sleep Paralysis</span></h5>
           <div>
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-md-4 mt-5"
+              class="store-link col-md-4 mt-5 text-nowrap"
             >
-              <font-awesome-icon :icon="['fab', link.icon]" class="text-white h3" />
+              <font-awesome-icon :icon="['fab', link.icon]" class="text-white" />
               <a
                 :href="link.link"
                 class="text-white social"
@@ -41,8 +42,7 @@
     <div class="row mb-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
-          <p class="bold">"Мне в Электростали живется нормально":</p>
-          <p>как писать треки в духе WARP и вдохновляться самой большой в Европе свалкой.</p>
+          <p><b>"Мне в Электростали живется нормально":</b> Как писать треки в духе WARP и вдохновляться самой большой в Европе свалкой.</p>
           <p>
             5 марта на новом лейбле «Местность» выйдет релиз Sleep Paralysis музыканта Дениса aka Anderdog.
             Это 10 треков, заряженных переживаниями сонного паралича и атмосферой индустриального города, где идет непрестанная борьба властей и эко-активистов.
@@ -67,7 +67,7 @@
           height="auto"
         />
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mt-3">
         <img
           src="static/anderdog_cassete_2.jpeg"
           alt="anderdog"
@@ -75,7 +75,7 @@
           height="auto"
         />
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mt-3">
         <img
           src="static/anderdog_cassete_3.jpeg"
           alt="anderdog"
@@ -103,7 +103,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .anderdog-sleep-paralysis {
   background-color: black;
   background-image: none;
@@ -126,7 +126,11 @@ h1 {
 
 .store-link {
   display: inline-block;
-  margin-left: 2em;
+  margin-left: 0.1em;
+  letter-spacing: 0.2em;
+  @media only screen and (max-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .release-name {
