@@ -15,30 +15,30 @@
         <transition name="fade">
           <div class="d-sm-none row" v-if="menuShow">
             <div class="col-sm-12" @click="menuShow = false">
-              <router-link class="btn" to="/" >Home</router-link>
+              <router-link class="btn text-nowrap" to="/" >Главная</router-link>
             </div>
             <div class="col-sm-12" @click="menuShow = false">
-              <router-link class="btn" to="/about" >About</router-link>
+              <router-link class="btn text-nowrap" to="/about" >О местности</router-link>
             </div>
             <div class="col-sm-12" @click="menuShow = false">
-              <router-link class="btn" to="/releases">Releases</router-link>
+              <router-link class="btn text-nowrap" to="/releases">Релизы</router-link>
             </div>
             <div class="col-sm-12" @click="menuShow = false">
-              <router-link class="btn" to="/contacts">Contacts</router-link>
+              <router-link class="btn text-nowrap" to="/contacts">Контакты</router-link>
             </div>
           </div>
         </transition>
         <div class="col-sm-2 d-none d-sm-block">
-          <router-link class="btn" to="/">Home</router-link>
+          <router-link class="btn text-nowrap px-2" to="/">Главная</router-link>
+        </div>
+        <div class="col-sm-3 d-none d-sm-block">
+          <router-link class="btn text-nowrap px-2" to="/about">О местности</router-link>
         </div>
         <div class="col-sm-2 d-none d-sm-block">
-          <router-link class="btn" to="/about">About</router-link>
+          <router-link class="btn text-nowrap px-2" to="/releases">Релизы</router-link>
         </div>
         <div class="col-sm-2 d-none d-sm-block">
-          <router-link class="btn" to="/releases">Releases</router-link>
-        </div>
-        <div class="col-sm-2 d-none d-sm-block">
-          <router-link class="btn" to="/contacts">Contacts</router-link>
+          <router-link class="btn text-nowrap px-2" to="/contacts">Контакты</router-link>
         </div>
       </div>
       <div class="h80">
@@ -46,29 +46,6 @@
           <router-view />
         </div>
       </div>
-      <footer class="d-flex justify-content-start">
-        <a
-          class="btn text-white"
-          href="https://t.me/mestnost_label"
-          target="_blank"
-        >
-          telegram
-        </a>
-        <a
-          class="btn text-white"
-          href="https://www.instagram.com/mestnostishere/"
-          target="_blank"
-        >
-          instagram
-        </a>
-        <a
-          class="btn text-white"
-          href="https://mestnost.bandcamp.com"
-          target="_blank"
-        >
-          bandcamp
-        </a>
-      </footer>
     </div>
   </div>
 </template>
@@ -92,15 +69,22 @@ export default {
   font-style: normal;
 }
 @font-face {
-  font-family: "DroidSerif";
+  font-family: "Cocomat";
   src: url('~@/assets/fonts/Cocomat-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "DroidSerif";
-    src: url('~@/assets/fonts/Cocomat-UltraLight.ttf');
+  font-family: "Acrom";
+    src: url('~@/assets/fonts/Acrom-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acrom";
+  src: url('~@/assets/fonts/Acrom-Regular.otf');
   font-weight: lighter;
   font-style: normal;
 }
@@ -153,21 +137,6 @@ body {
 
 .button {
   margin: 8px;
-}
-
-footer {
-  min-height: 10vh;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 16px;
-}
-
-footer a.btn {
-  font-size: 1em;
-  @media only screen and (max-width: 768px) {
-    letter-spacing: 0.1em;
-  }
 }
 
 .fade-enter-active, .fade-leave-active {

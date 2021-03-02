@@ -5,7 +5,6 @@
         <template v-for="release in releases" >
           <router-link :key="`${release.name}.sketch`" class="btn" to="/releases/AnderdogSleepParalysis">
             <div
-
               class="col-md-6 col-xs-12 sketch"
               @click="openReleasePage(release.name)"
             >
@@ -34,7 +33,7 @@ export default {
   name: 'Releases',
   components: {
     P5Sketch,
-   // ReleasePage
+   //  ReleasePage
   },
   data() {
     return {
