@@ -8,7 +8,7 @@
     <div class="row mb-5">
       <div class="col-md-12">
         <img
-          src="/static/anderdog.jpg"
+          src="static/anderdog.jpg"
           width="40%"
         />
       </div>
@@ -30,7 +30,7 @@
     <div class="row mb-5">
       <div class="col-md-12">
         <img
-          src="/static/anderdog_face.jpg"
+          src="static/anderdog_face.jpg"
           alt="anderdog"
           width="70%"
           height="auto"
@@ -50,7 +50,7 @@
     <div class="row mb-5">
       <div class="col-md-12">
         <img
-          src="/static/anderdog_cassete.jpg"
+          src="static/anderdog_cassete.jpg"
           alt="anderdog"
           width="50%"
           height="auto"
