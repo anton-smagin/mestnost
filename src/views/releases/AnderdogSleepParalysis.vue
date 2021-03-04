@@ -1,13 +1,13 @@
 <template>
   <div class="anderdog-sleep-paralysis w-100">
-    <div class="row mb-5">
-      <div class="col-xs-12 col-md-6">
+    <div class="row mb-5 fill d-flex">
+      <div class="col-xs-12 col-md-6 align-self-center">
         <img
           src="static/anderdog.jpg"
           width="80%"
         />
       </div>
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Anderdog</h5>
           <h5 class="text-white"><span class="text-nowrap">Sleep Paralysis</span></h5>
@@ -29,8 +29,8 @@
         </div>
       </div>
     </div>
-    <div class="row mb-5">
-      <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12 mb-5">
         <img
           src="static/anderdog_face.jpg"
           alt="anderdog"
@@ -39,7 +39,7 @@
         />
       </div>
     </div>
-    <div class="row mb-5">
+    <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
           <p><b>"Мне в Электростали живется нормально":</b> Как писать треки в духе WARP и вдохновляться самой большой в Европе свалкой.</p>
@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-md-4">
+      <div class="col-md-4 mt-5">
         <img
           src="static/anderdog_cassete_1.jpeg"
           alt="anderdog"
@@ -67,7 +67,7 @@
           height="auto"
         />
       </div>
-      <div class="col-md-4 mt-3">
+      <div class="col-md-4 mt-5">
         <img
           src="static/anderdog_cassete_2.jpeg"
           alt="anderdog"
@@ -75,7 +75,7 @@
           height="auto"
         />
       </div>
-      <div class="col-md-4 mt-3">
+      <div class="col-md-4 mt-5">
         <img
           src="static/anderdog_cassete_3.jpeg"
           alt="anderdog"
@@ -135,5 +135,10 @@ h1 {
 
 .release-name {
   font-weight: bold;
+}
+
+.fill {
+    min-height: 90vh;
+    height: 100%;
 }
 </style>
