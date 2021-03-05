@@ -93,10 +93,10 @@ export default {
   data() {
     return {
       links: [
-        { name: 'Bandcamp', icon: 'bandcamp', link: 'https://bandcamp.com' },
-        { name: 'Apple Music', icon: 'apple', link: 'https://apple.com' },
-        { name: 'Spotify', icon: 'spotify', link: 'https://spotify.com' },
-        { name: 'Yandex', icon: 'yandex', link: 'https://yandex.ru' },
+        { name: 'Bandcamp', icon: 'bandcamp', link: 'https://mestnost.bandcamp.com/album/sleep-paralysis' },
+        { name: 'Apple Music', icon: 'apple', link: 'https://music.apple.com/ru/album/sleep-paralysis/1553156110' },
+        { name: 'Spotify', icon: 'spotify', link: 'https://open.spotify.com/album/5jJcLtOKuLxwcz56kU8DYP?si=mcb4SpeYQ-GtkpnxPU5w6A' },
+        { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/13856322' },
       ]
     }
   },
