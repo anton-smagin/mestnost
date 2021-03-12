@@ -18,7 +18,6 @@ Vue.use(VueYandexMetrika, {
   id: 73630327,
   router: router,
   env: process.env.NODE_ENV,
-  debug: true,
   // other options
 })
 
