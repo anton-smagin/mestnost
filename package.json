@@ -19,7 +19,8 @@
     "simplex-noise": "^2.4.0",
     "vue": "^2.6.12",
     "vue-p5": "^0.8.3",
-    "vue-router": "^3.2.0"
+    "vue-router": "^3.2.0",
+    "vue-yandex-metrika": "^1.8.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
