@@ -52,7 +52,7 @@
           </p>
         </div>
         <p class="description text-white">
-          <a href="https://t.me/mestnost_label/341">
+          <a href="https://t.me/mestnost_label/351">
             продолжение читайте в нашем телеграм канале...
           </a>
         </p>
