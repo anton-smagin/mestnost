@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row p-5">
         <template v-for="release in releases" >
-          <router-link :key="`${release.name}.sketch`" class="btn" to="/releases/AnderdogSleepParalysis">
+          <router-link :key="`${release.name}.sketch`" class="btn" :to="`/${release.name}`">
             <div
               class="col-md-6 col-xs-12 sketch align-items-center"
               @click="openReleasePage(release.name)"
             >
               <p-5-sketch
-                image-title="anderdog"
+                :image-title="`${release.artistName}`"
                 class="p5-sketch"
               />
               <div class="text-white" :key="`${release.name}.description`">
@@ -38,7 +38,16 @@ export default {
   data() {
     return {
      releases: [
-       { name: 'releases/AnderdogSleepParalysis', artistName: 'Anderdog', releaseName: 'Sleep Paralysis', },
+       {
+         name: 'releases/AnderdogSleepParalysis',
+         artistName: 'Anderdog',
+         releaseName: 'Sleep Paralysis',
+       },
+       {
+         name: 'releases/KoMaRealFace',
+         artistName: 'Ko+Ma',
+         releaseName: '-',
+        },
      ],
      releasePage: null,
      showReleasePage: false,
@@ -55,10 +64,10 @@ export default {
 
 <style scoped lang="scss">
   .description {
+    font-family: 'Acrom';
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    white-space: nowrap;
     &:hover {
       color: #91a79d;
     }

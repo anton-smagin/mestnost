@@ -89,7 +89,7 @@
 
 <script>
 export default {
-  name: 'AnderdogSleepParalysos',
+  name: 'AnderdogSleepParalysis',
   data() {
     return {
       links: [
