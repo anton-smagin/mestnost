@@ -3,7 +3,7 @@
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img
-          src="static/Anderdog.jpg"
+          src="static/anderdog.jpg"
           width="80%"
         />
       </div>

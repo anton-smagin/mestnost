@@ -9,7 +9,7 @@
               @click="openReleasePage(release.name)"
             >
               <p-5-sketch
-                :image-title="`${release.artistName}`"
+                :image-title="`${release.artistName.toLowerCase()}`"
                 class="p5-sketch"
               />
               <div class="text-white" :key="`${release.name}.description`">
