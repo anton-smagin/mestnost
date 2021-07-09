@@ -9,7 +9,7 @@
               @click="openReleasePage(release.name)"
             >
               <p-5-sketch
-                :image-title="`${release.artistName.toLowerCase()}`"
+                :image-title="`${release.image}`"
                 class="p5-sketch"
               />
               <div class="text-white" :key="`${release.name}.description`">
@@ -42,11 +42,13 @@ export default {
          name: 'releases/AnderdogSleepParalysis',
          artistName: 'Anderdog',
          releaseName: 'Sleep Paralysis',
+         image: 'anderdog',
        },
        {
          name: 'releases/KoMaRealFace',
          artistName: 'Ko+Ma',
          releaseName: '-',
+         image: 'koma',
         },
      ],
      releasePage: null,
