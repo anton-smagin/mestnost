@@ -50,6 +50,12 @@ export default {
          releaseName: '-',
          image: 'koma',
         },
+        {
+         name: 'releases/AmbidextrousErrorism',
+         artistName: 'Ambidextrous',
+         releaseName: 'Errorism',
+         image: 'ambidextrous_cassete_1',
+        },
      ],
      releasePage: null,
      showReleasePage: false,

@@ -54,6 +54,14 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import('../views/releases/KoMaRealFace.vue')
   },
+  {
+    path: '/releases/AmbidextrousErrorism',
+    name: 'releases/AmbidextrousErrorism',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/releases/AmbidextrousErrorism.vue')
+  },
 ]
 
 const router = new VueRouter({
