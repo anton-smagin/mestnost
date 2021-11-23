@@ -3,7 +3,7 @@
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img
-          src="static/ambidextrous_cassete_1.jpeg"
+          src="static/ambidextrous_cassete_1.jpg"
           width="80%"
         />
       </div>
@@ -55,7 +55,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="static/ambidextrous_cassete_1.jpeg"
+          src="static/ambidextrous_cassete_1.jpg"
           alt="ambidextrous"
           width="80%"
           height="auto"
@@ -63,7 +63,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/ambidextrous_cassete_2.jpeg"
+          src="static/ambidextrous_cassete_2.jpg"
           alt="ambidextrous"
           width="80%"
           height="auto"
@@ -71,7 +71,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/ambidextrous_cassete_3.jpeg"
+          src="static/ambidextrous_cassete_3.jpg"
           alt="ambidextrous"
           width="80%"
           height="auto"
