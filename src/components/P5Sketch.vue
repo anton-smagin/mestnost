@@ -67,8 +67,8 @@ export default {
       let len = this.image.pixels.length;
       // this.speedX = sketch.map(sketch.mouseX, 0, sketch.width, -15, 15);
       // this.speedY = sketch.map(sketch.mouseY, 0, sketch.width, -15, 15);
-      for (let i = 0; i < sketch.width; i+= 4) {
-        for (let j = 0; j < sketch.height; j+= 4) {
+      for (let i = 0; i < sketch.width; i+= 3) {
+        for (let j = 0; j < sketch.height; j+= 3) {
           let m = i + j * this.image.width;
           let offset = this.warp(i, j, 0.000003 * this.msSinceStart / 1000, 615, sketch);
           offset = (m-parseInt(offset))%len * 4;

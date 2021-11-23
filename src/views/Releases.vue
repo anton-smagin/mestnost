@@ -3,21 +3,22 @@
     <div class="container">
       <div class="row p-5">
         <template v-for="release in releases" >
-          <router-link :key="`${release.name}.sketch`" class="btn" :to="`/${release.name}`">
-            <div
-              class="col-md-6 col-xs-12 sketch align-items-center"
-              @click="openReleasePage(release.name)"
-            >
-              <p-5-sketch
-                :image-title="`${release.image}`"
-                class="p5-sketch"
-              />
-              <div class="text-white" :key="`${release.name}.description`">
-                <p class="description">{{ release.artistName }}</p>
-                <p class="description">{{ release.releaseName }}</p>
-              </div>
-            </div>
-          </router-link>
+          <div
+            class="col-md-6 col-xs-12 sketch align-items-center"
+            @click="openReleasePage(release.name)"
+            :key="`${release.name}.sketch`"
+          >
+            <router-link class="btn " :to="`/${release.name}`">
+                <p-5-sketch
+                  :image-title="`${release.image}`"
+                  class="p5-sketch"
+                />
+                <div class="text-white" :key="`${release.name}.description`">
+                  <p class="description">{{ release.artistName }}</p>
+                  <p class="description">{{ release.releaseName }}</p>
+                </div>
+            </router-link>
+          </div>
         </template>
       </div>
     </div>
