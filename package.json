@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "gh-deploy": "git subtree push --prefix dist origin gh-pages"
+    "gh-deploy": "git subtree push --prefix dist origin gh-pages",
+    "gh-deploy-force": "git push origin `git subtree split --prefix dist main`:gh-pages --force"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
