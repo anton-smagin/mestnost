@@ -25,42 +25,32 @@ const routes = [
   {
     path: '/releases',
     name: 'Releases',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/Releases.vue')
   },
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/About.vue')
   },
   {
     path: '/releases/AnderdogSleepParalysis',
     name: 'releases/AnderdogSleepParalysis',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/releases/AnderdogSleepParalysis.vue')
   },
   {
     path: '/releases/KoMaRealFace',
     name: 'releases/KoMaRealFace',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/releases/KoMaRealFace.vue')
   },
   {
     path: '/releases/AmbidextrousErrorism',
     name: 'releases/AmbidextrousErrorism',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/releases/AmbidextrousErrorism.vue')
+  },
+  {
+    path: '/releases/MicrodogEastSide',
+    name: 'releases/MicrodogEastSide',
+    component: () => import('../views/releases/MicrodogEastSide.vue')
   },
 ]
 

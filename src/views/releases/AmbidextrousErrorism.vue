@@ -33,7 +33,7 @@
       <div class="col-md-12 mb-5">
         <img
           src="static/ambidextrous_face.jpg"
-          alt="anderdog"
+          alt="ambidextrous"
           width="70%"
           height="auto"
         />

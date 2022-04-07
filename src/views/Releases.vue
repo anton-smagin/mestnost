@@ -57,6 +57,12 @@ export default {
          releaseName: 'Errorism',
          image: 'ambidextrous_cassete_1',
         },
+        {
+         name: 'releases/MicrodogEastSide',
+         artistName: 'Microdog',
+         releaseName: 'East Side of the Breaktown',
+         image: 'microdog',
+        },
      ],
      releasePage: null,
      showReleasePage: false,
