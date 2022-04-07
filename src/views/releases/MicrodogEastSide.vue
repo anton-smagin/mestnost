@@ -10,7 +10,7 @@
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Microdog</h5>
-          <h5 class="text-white"><span class="text-nowrap">East Side of the Breaktown</span></h5>
+          <h5 class="text-white"><span>East Side of the Breaktown</span></h5>
           <div>
             <div
               v-for="link in links"

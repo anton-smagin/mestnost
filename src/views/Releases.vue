@@ -40,29 +40,29 @@ export default {
     return {
      releases: [
        {
+        name: 'releases/MicrodogEastSide',
+        artistName: 'Microdog',
+        releaseName: 'East Side of the Breaktown',
+        image: 'microdog',
+       },
+       {
+        name: 'releases/AmbidextrousErrorism',
+        artistName: 'Ambidextrous',
+        releaseName: 'Errorism',
+        image: 'ambidextrous_cassete_1',
+       },
+       {
+          name: 'releases/KoMaRealFace',
+          artistName: 'Ko+Ma',
+          releaseName: '-',
+          image: 'koma',
+       },
+       {
          name: 'releases/AnderdogSleepParalysis',
          artistName: 'Anderdog',
          releaseName: 'Sleep Paralysis',
          image: 'anderdog',
        },
-       {
-         name: 'releases/KoMaRealFace',
-         artistName: 'Ko+Ma',
-         releaseName: '-',
-         image: 'koma',
-        },
-        {
-         name: 'releases/AmbidextrousErrorism',
-         artistName: 'Ambidextrous',
-         releaseName: 'Errorism',
-         image: 'ambidextrous_cassete_1',
-        },
-        {
-         name: 'releases/MicrodogEastSide',
-         artistName: 'Microdog',
-         releaseName: 'East Side of the Breaktown',
-         image: 'microdog',
-        },
      ],
      releasePage: null,
      showReleasePage: false,

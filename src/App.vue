@@ -100,7 +100,7 @@ body {
 #app {
   font-family: Cocomat;
   font-weight: normal;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
