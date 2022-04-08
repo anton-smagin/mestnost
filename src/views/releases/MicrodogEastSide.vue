@@ -20,6 +20,7 @@
               <font-awesome-icon :icon="['fab', link.icon]" class="text-white" />
               <a
                 :href="link.link"
+                target="_blank"
                 class="text-white social"
               >
                 {{ link.name }}
@@ -102,6 +103,9 @@ export default {
     return {
       links: [
         { name: 'Bandcamp', icon: 'bandcamp', link: 'https://mestnost.bandcamp.com/album/east-side-of-the-breaktown' },
+        { name: 'Apple Music', icon: 'apple', link: 'https://music.apple.com/album/1611436473' },
+        { name: 'Spotify', icon: 'spotify', link: 'https://open.spotify.com/album/0hz2eBqxt2aQ12tP4OideU' },
+        { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/21595457' },
       ]
     }
   },

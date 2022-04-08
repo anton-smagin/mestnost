@@ -22,6 +22,7 @@
               <font-awesome-icon :icon="['fab', link.icon]" class="text-white" />
               <a
                 :href="link.link"
+                target="_blank"
                 class="text-white social"
               >
                 {{ link.name }}
