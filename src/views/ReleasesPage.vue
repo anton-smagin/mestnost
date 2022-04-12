@@ -2,11 +2,10 @@
   <div class="releases">
     <div class="container">
       <div class="row p-5">
-        <template v-for="release in releases" >
+        <template v-for="release in releases" :key="release.name">
           <div
             class="col-md-6 col-xs-12 sketch align-items-center"
             @click="openReleasePage(release.name)"
-            :key="`${release.name}.sketch`"
           >
             <router-link class="btn " :to="`/${release.name}`">
                 <p-5-sketch
@@ -31,47 +30,47 @@ import P5Sketch from '@/components/P5Sketch.vue'
 // import ReleasePage from '@/components/ReleasePage.vue'
 
 export default {
-  name: 'Releases',
+  name: 'ReleasesPage',
   components: {
-    P5Sketch,
-   //  ReleasePage
+    P5Sketch
+    //  ReleasePage
   },
-  data() {
+  data () {
     return {
-     releases: [
-       {
-        name: 'releases/MicrodogEastSide',
-        artistName: 'Microdog',
-        releaseName: 'East Side of the Breaktown',
-        image: 'microdog',
-       },
-       {
-        name: 'releases/AmbidextrousErrorism',
-        artistName: 'Ambidextrous',
-        releaseName: 'Errorism',
-        image: 'ambidextrous_cassete_1',
-       },
-       {
+      releases: [
+        {
+          name: 'releases/MicrodogEastSide',
+          artistName: 'Microdog',
+          releaseName: 'East Side of the Breaktown',
+          image: 'microdog'
+        },
+        {
+          name: 'releases/AmbidextrousErrorism',
+          artistName: 'Ambidextrous',
+          releaseName: 'Errorism',
+          image: 'ambidextrous_cassete_1'
+        },
+        {
           name: 'releases/KoMaRealFace',
           artistName: 'Ko+Ma',
           releaseName: '-',
-          image: 'koma',
-       },
-       {
-         name: 'releases/AnderdogSleepParalysis',
-         artistName: 'Anderdog',
-         releaseName: 'Sleep Paralysis',
-         image: 'anderdog',
-       },
-     ],
-     releasePage: null,
-     showReleasePage: false,
+          image: 'koma'
+        },
+        {
+          name: 'releases/AnderdogSleepParalysis',
+          artistName: 'Anderdog',
+          releaseName: 'Sleep Paralysis',
+          image: 'anderdog'
+        }
+      ],
+      releasePage: null,
+      showReleasePage: false
     }
   },
   methods: {
-    openReleasePage(releaseName) {
-      this.releasePage = releaseName;
-      this.showReleasePage = true;
+    openReleasePage (releaseName) {
+      this.releasePage = releaseName
+      this.showReleasePage = true
     }
   }
 }

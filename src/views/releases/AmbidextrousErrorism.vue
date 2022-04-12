@@ -85,13 +85,13 @@
 <script>
 export default {
   name: 'AmbidextrousErrorism',
-  data() {
+  data () {
     return {
       links: [
-        { name: 'Bandcamp', icon: 'bandcamp', link: 'https://mestnost.bandcamp.com/album/errorism' },
+        { name: 'Bandcamp', icon: 'bandcamp', link: 'https://mestnost.bandcamp.com/album/errorism' }
       ]
     }
-  },
+  }
 }
 </script>
 

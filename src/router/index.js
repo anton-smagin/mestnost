@@ -1,18 +1,13 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import { BootstrapVue } from 'bootstrap-vue'
+import { createRouter } from "vue-router";
+import HomePage from '../views/HomePage.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-Vue.use(BootstrapVue)
-Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'home',
+    component: HomePage
   },
   {
     path: '/contacts',
@@ -20,17 +15,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../views/Contacts.vue')
+    component: () => import('../views/ContactsPage.vue')
   },
   {
     path: '/releases',
-    name: 'Releases',
-    component: () => import('../views/Releases.vue')
+    name: 'release',
+    component: () => import('../views/ReleasesPage.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('../views/About.vue')
+    component: () => import('../views/AboutPage.vue')
   },
   {
     path: '/releases/AnderdogSleepParalysis',
@@ -51,11 +46,12 @@ const routes = [
     path: '/releases/MicrodogEastSide',
     name: 'releases/MicrodogEastSide',
     component: () => import('../views/releases/MicrodogEastSide.vue')
-  },
+  }
 ]
 
-const router = new VueRouter({
-  routes
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
 })
 
 export default router

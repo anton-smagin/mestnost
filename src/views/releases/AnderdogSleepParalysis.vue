@@ -91,16 +91,16 @@
 <script>
 export default {
   name: 'AnderdogSleepParalysis',
-  data() {
+  data () {
     return {
       links: [
         { name: 'Bandcamp', icon: 'bandcamp', link: 'https://mestnost.bandcamp.com/album/sleep-paralysis' },
         { name: 'Apple Music', icon: 'apple', link: 'https://music.apple.com/ru/album/sleep-paralysis/1553156110' },
         { name: 'Spotify', icon: 'spotify', link: 'https://open.spotify.com/album/5jJcLtOKuLxwcz56kU8DYP?si=mcb4SpeYQ-GtkpnxPU5w6A' },
-        { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/13856322' },
+        { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/13856322' }
       ]
     }
-  },
+  }
 }
 </script>
 

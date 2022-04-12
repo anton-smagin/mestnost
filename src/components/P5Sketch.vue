@@ -13,15 +13,15 @@
 </template>
 
 <script>
-import VueP5 from "vue-p5";
-import SimplexNoise from "simplex-noise";
+import VueP5 from 'vue-p5'
+import SimplexNoise from 'simplex-noise'
 export default {
-  name: "p5-example",
+  name: 'p5-example',
   components: {
-    "vue-p5": VueP5
+    'vue-p5': VueP5
   },
   props: {
-    imageTitle: String,
+    imageTitle: String
   },
   data: () => ({
     lines: [],
@@ -35,43 +35,43 @@ export default {
     noiseScale: 0.002,
     simplexNoise: new SimplexNoise(`${Math.random()}`),
     speedX: 1,
-    speedY: 1,
+    speedY: 1
   }),
   computed: {
-    msSinceStart() {
-      return this.currentTime - this.startTime;
+    msSinceStart () {
+      return this.currentTime - this.startTime
     },
-    blue() {
-      return Math.floor(this.msSinceStart * 0.03) % 255;
+    blue () {
+      return Math.floor(this.msSinceStart * 0.03) % 255
     },
-    p5LogoRotationAngle() {
-      return this.msSinceStart * 0.0001 % Math.PI * 2;
+    p5LogoRotationAngle () {
+      return this.msSinceStart * 0.0001 % Math.PI * 2
     },
-    side() {
-      let width = window.innerWidth;
-      let height = window.innerHeight;
-      return Math.min(width, height) * 0.4;
-    },
+    side () {
+      const width = window.innerWidth
+      const height = window.innerHeight
+      return Math.min(width, height) * 0.4
+    }
   },
   methods: {
-    preload(sketch) {
-      this.image = sketch.loadImage(`static/${this.imageTitle}.jpg`);
+    preload (sketch) {
+      this.image = sketch.loadImage(`static/${this.imageTitle}.jpg`)
     },
-    setup(sketch) {
-      sketch.createCanvas(this.side, this.side);
-      this.image.resize(this.side, this.side);
+    setup (sketch) {
+      sketch.createCanvas(this.side, this.side)
+      this.image.resize(this.side, this.side)
     },
-    draw(sketch) {
-      this.currentTime = Date.now();
-      this.image.loadPixels();
-      let len = this.image.pixels.length;
+    draw (sketch) {
+      this.currentTime = Date.now()
+      this.image.loadPixels()
+      const len = this.image.pixels.length
       // this.speedX = sketch.map(sketch.mouseX, 0, sketch.width, -15, 15);
       // this.speedY = sketch.map(sketch.mouseY, 0, sketch.width, -15, 15);
-      for (let i = 0; i < sketch.width; i+= 3) {
-        for (let j = 0; j < sketch.height; j+= 3) {
-          let m = i + j * this.image.width;
-          let offset = this.warp(i, j, 0.000003 * this.msSinceStart / 1000, 615, sketch);
-          offset = (m-parseInt(offset))%len * 4;
+      for (let i = 0; i < sketch.width; i += 3) {
+        for (let j = 0; j < sketch.height; j += 3) {
+          const m = i + j * this.image.width
+          let offset = this.warp(i, j, 0.000003 * this.msSinceStart / 1000, 615, sketch)
+          offset = (m - parseInt(offset)) % len * 4
           this.image.set(
             i,
             j,
@@ -79,44 +79,44 @@ export default {
               this.image.pixels[offset],
               this.image.pixels[offset + 1],
               this.image.pixels[offset + 2]
-            ),
-          );
+            )
+          )
         }
       }
-      this.image.updatePixels();
-      sketch.image(this.image, 0, 0);
+      this.image.updatePixels()
+      sketch.image(this.image, 0, 0)
     },
-    keyPressed({ keyCode }) {
+    keyPressed ({ keyCode }) {
       // 'g' key
       if (keyCode === 71) {
-        this.toggleGreen();
+        this.toggleGreen()
       }
     },
-    toggleRed() {
-      this.red = 255 - this.red;
+    toggleRed () {
+      this.red = 255 - this.red
     },
-    toggleGreen() {
-      this.green = 255 - this.green;
+    toggleGreen () {
+      this.green = 255 - this.green
     },
-    pushLine(line) {
-      let lines = this.lines;
-      lines.push(line);
-      this.lines = lines.slice(-100);
+    pushLine (line) {
+      const lines = this.lines
+      lines.push(line)
+      this.lines = lines.slice(-100)
     },
-    windowResized(sketch) {
-      sketch.resizeCanvas(this.side, this.side);
+    windowResized (sketch) {
+      sketch.resizeCanvas(this.side, this.side)
     },
-    warp(_x, _y, factor, n_range, sketch) {
-      let n1 = this.simplexNoise.noise2D((_x+0.0) * factor, (_y+0.0) * factor) * n_range;
-      let n2 = this.simplexNoise.noise2D((_x+5.2) * factor, (_y+1.3) * factor) * n_range;
-      let q = sketch.createVector(n1, n2);
+    warp (_x, _y, factor, nRange, sketch) {
+      const n1 = this.simplexNoise.noise2D((_x + 0.0) * factor, (_y + 0.0) * factor) * nRange
+      const n2 = this.simplexNoise.noise2D((_x + 5.2) * factor, (_y + 1.3) * factor) * nRange
+      const q = sketch.createVector(n1, n2)
 
-      let n3 = this.simplexNoise.noise2D(((_x + q.x * 4) + 1.7) * factor, ((_y + q.y * 4) + 9.2) * factor) * n_range;
-      let n4 = this.simplexNoise.noise2D(((_x + q.x * 4) + 8.3) * factor, ((_y + q.y * 4) + 2.8) * factor) * n_range;
-      let r = sketch.createVector(n3, n4);
+      const n3 = this.simplexNoise.noise2D(((_x + q.x * 4) + 1.7) * factor, ((_y + q.y * 4) + 9.2) * factor) * nRange
+      const n4 = this.simplexNoise.noise2D(((_x + q.x * 4) + 8.3) * factor, ((_y + q.y * 4) + 2.8) * factor) * nRange
+      const r = sketch.createVector(n3, n4)
 
-      return this.simplexNoise.noise2D((_x + r.x * 4) * factor, (_y + r.y * 4) * factor) * n_range;
+      return this.simplexNoise.noise2D((_x + r.x * 4) * factor, (_y + r.y * 4) * factor) * nRange
     }
   }
-};
+}
 </script>

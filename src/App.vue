@@ -52,12 +52,12 @@
 
 <script>
 export default {
-  name: 'Home',
-  data() {
+  name: 'HomePage',
+  data () {
     return {
-      menuShow: false,
+      menuShow: false
     }
-  },
+  }
 }
 </script>
 

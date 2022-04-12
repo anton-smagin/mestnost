@@ -72,16 +72,16 @@
 <script>
 export default {
   name: 'KoMaRealFace',
-  data() {
+  data () {
     return {
       links: [
         { name: 'Bandcamp', icon: 'bandcamp', link: 'https://mestnost.bandcamp.com/album/-' },
         { name: 'Apple Music', icon: 'apple', link: 'https://music.apple.com/ru/album/_/1574280392' },
         { name: 'Spotify', icon: 'spotify', link: 'https://open.spotify.com/album/5cBQvOrmZ7Ui1Bnd3bPvEi' },
-        { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/16554278' },
+        { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/16554278' }
       ]
     }
-  },
+  }
 }
 </script>
 

@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'release-page',
+  name: 'release-page'
 }
 </script>
 
