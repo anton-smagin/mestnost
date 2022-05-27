@@ -1,5 +1,5 @@
 <template>
-  <div class="microdog-east-side w-100">
+  <div class="vvedenskaya-attempts w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img
@@ -57,6 +57,14 @@
             В целом в альбоме много эмбиента и жесткого бита. Своим дискомфортом это вызывает сопереживание. Альбом нельзя не заметить или поставить фоном, его надо слушать и переживать.
           </p>
           <p><i>Vvvedenskaya</i></p>
+          <div class="shadowed">
+            <p><i>all tracks by Vvvedenskaya</i></p>
+            <p>
+              <i>
+                mixed & mastered by <a href="https://infrasurge.bandcamp.com" target="_blank">INFRASURGE</a>
+              </i>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -106,7 +114,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.microdog-east-side {
+.vvedenskaya-attempts {
   background-color: black;
   background-image: none;
 }
@@ -146,5 +154,10 @@ h1 {
 .fill {
     min-height: 90vh;
     height: 100%;
+}
+
+.shadowed {
+  color:lightgrey;
+  font-size: 0.8em;
 }
 </style>
