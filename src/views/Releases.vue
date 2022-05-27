@@ -39,6 +39,12 @@ export default {
   data() {
     return {
      releases: [
+      {
+        name: 'releases/VvvedenskayaAttempts',
+        artistName: 'Vvvedenskaya',
+        releaseName: 'Attempts',
+        image: 'vvvedenskaya',
+       },
        {
         name: 'releases/MicrodogEastSide',
         artistName: 'Microdog',

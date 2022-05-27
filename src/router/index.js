@@ -52,6 +52,11 @@ const routes = [
     name: 'releases/MicrodogEastSide',
     component: () => import('../views/releases/MicrodogEastSide.vue')
   },
+  {
+    path: '/releases/VvvedenskayaAttempts',
+    name: 'releases/VvvedenskayaAttempts',
+    component: () => import('../views/releases/VvvedenskayaAttempts.vue')
+  }
 ]
 
 const router = new VueRouter({
