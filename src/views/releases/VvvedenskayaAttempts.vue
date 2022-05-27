@@ -56,6 +56,7 @@
           <p>
             В целом в альбоме много эмбиента и жесткого бита. Своим дискомфортом это вызывает сопереживание. Альбом нельзя не заметить или поставить фоном, его надо слушать и переживать.
           </p>
+          <p><i>Vvvedenskaya</i></p>
         </div>
       </div>
     </div>
@@ -64,7 +65,7 @@
         <img
           src="static/vvvedenskaya_cassete_1.jpg"
           alt="vvedenskaya"
-          width="80%"
+          width="90%"
           height="auto"
         />
       </div>
@@ -72,7 +73,7 @@
         <img
           src="static/vvvedenskaya_cassete_2.jpg"
           alt="vvedenskaya"
-          width="80%"
+          width="90%"
           height="auto"
         />
       </div>
@@ -80,7 +81,7 @@
         <img
           src="static/vvvedenskaya_cassete_3.jpg"
           alt="vvedenskaya"
-          width="80%"
+          width="90%"
           height="auto"
         />
       </div>
