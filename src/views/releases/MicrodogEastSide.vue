@@ -65,6 +65,14 @@
             Увидимся на облаках, в раю ломаных ритмов.
           </p>
         </div>
+        <div class="col-md-6 offset-md-2">
+          <iframe
+            style="border: 0; width: 100%; height: 120px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=4259941700/size=large/bgcol=333333/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+            seamless
+          >
+            <a href="https://mestnost.bandcamp.com/album/east-side-of-the-breaktown">East Side of the Breaktown by Microdog</a></iframe>
+        </div>
       </div>
     </div>
     <div class="row mb-5">

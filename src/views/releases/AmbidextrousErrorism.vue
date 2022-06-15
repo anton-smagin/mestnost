@@ -51,6 +51,12 @@
             Кассетный релиз Errorism открывает серию переизданий под названием «Местность Источники» – это фонотека культовых работ, повлиявших на ту или иную локальную сцену.
           </p>
         </div>
+        <div class="col-md-6 offset-md-2">
+          <iframe
+            style="border: 0; width: 100%; height: 120px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2299107141/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://mestnost.bandcamp.com/album/errorism">Errorism by Ambidextrous</a>
+          </iframe>
+        </div>
       </div>
     </div>
     <div class="row mb-5">
