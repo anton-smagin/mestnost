@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     preload(sketch) {
-      this.image = sketch.loadImage(`static/${this.imageTitle}.jpg`);
+      this.image = sketch.loadImage(`/static/${this.imageTitle}.jpg`);
     },
     setup(sketch) {
       sketch.createCanvas(this.side, this.side);

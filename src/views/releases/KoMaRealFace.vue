@@ -3,7 +3,7 @@
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img
-          src="static/koma.jpg"
+          src="/static/koma.jpg"
           width="80%"
         />
       </div>
@@ -35,7 +35,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="static/koma1.jpeg"
+          src="/static/koma1.jpeg"
           alt="anderdog"
           width="70%"
           height="auto"
@@ -68,7 +68,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="static/koma2.jpeg"
+          src="/static/koma2.jpeg"
           alt="anderdog"
           width="70%"
           height="auto"

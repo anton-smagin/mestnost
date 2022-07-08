@@ -3,7 +3,7 @@
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img
-          src="static/anderdog.jpg"
+          src="/static/anderdog.jpg"
           width="80%"
         />
       </div>
@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="static/anderdog_face.jpg"
+          src="/static/anderdog_face.jpg"
           alt="anderdog"
           width="70%"
           height="auto"
@@ -73,7 +73,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="static/anderdog_cassete_1.jpeg"
+          src="/static/anderdog_cassete_1.jpeg"
           alt="anderdog"
           width="80%"
           height="auto"
@@ -81,7 +81,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/anderdog_cassete_2.jpeg"
+          src="/static/anderdog_cassete_2.jpeg"
           alt="anderdog"
           width="80%"
           height="auto"
@@ -89,7 +89,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/anderdog_cassete_3.jpeg"
+          src="/static/anderdog_cassete_3.jpeg"
           alt="anderdog"
           width="80%"
           height="auto"

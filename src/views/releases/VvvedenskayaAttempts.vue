@@ -3,7 +3,7 @@
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img
-          src="static/vvvedenskaya.jpg"
+          src="/static/vvvedenskaya.jpg"
           width="80%"
         />
       </div>
@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="static/vvvedenskaya_face.jpg"
+          src="/static/vvvedenskaya_face.jpg"
           alt="vvvedenskaya"
           width="70%"
           height="auto"
@@ -86,7 +86,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/vvvedenskaya_cassete_2.jpg"
+          src="/static/vvvedenskaya_cassete_2.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -94,7 +94,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/vvvedenskaya_cassete_3.jpg"
+          src="/static/vvvedenskaya_cassete_3.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"

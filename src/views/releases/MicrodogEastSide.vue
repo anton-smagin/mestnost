@@ -3,7 +3,7 @@
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img
-          src="static/microdog.jpg"
+          src="/static/microdog.jpg"
           width="80%"
         />
       </div>
@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="static/microdog_face.jpg"
+          src="/static/microdog_face.jpg"
           alt="microdog"
           width="70%"
           height="auto"
