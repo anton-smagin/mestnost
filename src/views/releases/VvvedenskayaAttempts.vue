@@ -113,7 +113,7 @@ export default {
         { name: 'Bandcamp', icon: 'bandcamp', link: 'https://mestnost.bandcamp.com/album/attempts' },
         { name: 'Apple Music', icon: 'apple', link: 'https://music.apple.com/album/attempts-ep/1620433720' },
         { name: 'Spotify', icon: 'spotify', link: 'https://open.spotify.com/album/1aucx2r8GR8n6vCH5XEb0I' },
-        // { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/21595457' },
+        { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/22535403' },
       ]
     }
   },

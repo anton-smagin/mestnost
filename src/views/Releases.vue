@@ -2,7 +2,7 @@
   <div class="releases">
     <div class="container">
       <div class="row p-5">
-        <template v-for="release in releases" >
+        <template v-for="release in releases">
           <div
             class="col-md-6 col-xs-12 sketch align-items-center"
             @click="openReleasePage(release.name)"
@@ -39,6 +39,12 @@ export default {
   data() {
     return {
      releases: [
+      {
+        name: 'releases/MorakhLimes',
+        artistName: 'Morakh',
+        releaseName: 'Limes',
+        image: 'morakh',
+       },
       {
         name: 'releases/VvvedenskayaAttempts',
         artistName: 'Vvvedenskaya',
