@@ -40,6 +40,12 @@ export default {
     return {
      releases: [
       {
+        name: 'releases/AnderdogAndreyLeto',
+        artistName: 'Anderdog and Andrey Leto',
+        releaseName: 'Romantic Selection',
+        image: 'anderdogandreyleto',
+      },
+      {
         name: 'releases/MorakhLimes',
         artistName: 'Morakh',
         releaseName: 'Limes',
