@@ -24,6 +24,13 @@
       </a>
       <a
         class="btn text-white"
+        href="https://vk.com/mestnostrecords"
+        target="_blank"
+      >
+        вк
+      </a>
+      <a
+        class="btn text-white"
         href="https://mestnost.bandcamp.com"
         target="_blank"
       >
