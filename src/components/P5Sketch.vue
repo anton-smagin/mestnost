@@ -1,6 +1,6 @@
 
 <template>
-  <div class="p5-template row justify-content-center">
+  <div class="p5-template justify-content-center">
     <vue-p5
       @preload="preload"
       @setup="setup"

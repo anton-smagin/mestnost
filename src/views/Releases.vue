@@ -40,6 +40,12 @@ export default {
     return {
      releases: [
       {
+        name: 'releases/KokokeiMimoza',
+        artistName: 'Kokokei',
+        releaseName: 'Mimoza',
+        image: 'kokokei',
+      },
+      {
         name: 'releases/AnderdogAndreyLeto',
         artistName: 'Anderdog and Andrey Leto',
         releaseName: 'Romantic Selection',
@@ -104,6 +110,10 @@ export default {
     &:hover {
       color: #91a79d;
     }
+  }
+
+  .p-5 {
+    justify-content: space-around;
   }
 
   .sketch {

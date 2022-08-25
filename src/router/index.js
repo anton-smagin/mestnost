@@ -66,6 +66,11 @@ const routes = [
     path: '/releases/AnderdogAndreyLeto',
     name: 'releases/AnderdogAndreyLeto',
     component: () => import('../views/releases/AnderdogAndreyLeto.vue')
+  },
+  {
+    path: '/releases/KokokeiMimoza',
+    name: 'releases/KokokeiMimoza',
+    component: () => import('../views/releases/KokokeiMimoza.vue')
   }
 ]
 
