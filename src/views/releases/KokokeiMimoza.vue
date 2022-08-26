@@ -105,6 +105,7 @@ export default {
         // { name: 'Apple Music', icon: 'apple', link: 'https://music.apple.com/album/attempts-ep/1620433720' },
         { name: 'Spotify', icon: 'spotify', link: 'https://open.spotify.com/album/5ZR61ExaZWB9ENHgNivmsK' },
         { name: 'Yandex', icon: 'yandex', link: 'https://music.yandex.ru/album/23288396' },
+        { name: 'vk', icon: 'vk', link: 'https://vk.com/music/album/-2000161620_16161620_087d2718827c07cf9a' },
       ]
     }
   },
