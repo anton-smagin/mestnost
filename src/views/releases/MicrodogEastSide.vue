@@ -78,24 +78,24 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="static/microdog_cassete_1.jpeg"
-          alt="ambidextrous"
+          src="static/microdog_cassette_1.jpeg"
+          alt="microdog cassette 1"
           width="80%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/microdog_cassete_2.jpeg"
-          alt="ambidextrous"
+          src="static/microdog_cassette_2.jpeg"
+          alt="microdog cassette 2"
           width="80%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="static/microdog_cassete_3.jpeg"
-          alt="ambidextrous"
+          src="static/microdog_cassette_3.jpeg"
+          alt="microdog cassette 3"
           width="80%"
           height="auto"
         />

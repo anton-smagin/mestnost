@@ -73,7 +73,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="/static/anderdog_cassete_1.jpeg"
+          src="/static/anderdog_cassette_1.jpeg"
           alt="anderdog"
           width="80%"
           height="auto"
@@ -81,7 +81,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/anderdog_cassete_2.jpeg"
+          src="/static/anderdog_cassette_2.jpeg"
           alt="anderdog"
           width="80%"
           height="auto"
@@ -89,7 +89,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/anderdog_cassete_3.jpeg"
+          src="/static/anderdog_cassette_3.jpeg"
           alt="anderdog"
           width="80%"
           height="auto"

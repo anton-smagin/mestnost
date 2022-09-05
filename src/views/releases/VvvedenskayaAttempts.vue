@@ -78,7 +78,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="static/vvvedenskaya_cassete_1.jpg"
+          src="static/vvvedenskaya_cassette_1.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -86,7 +86,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/vvvedenskaya_cassete_2.jpg"
+          src="/static/vvvedenskaya_cassette_2.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -94,7 +94,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/vvvedenskaya_cassete_3.jpg"
+          src="/static/vvvedenskaya_cassette_3.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"

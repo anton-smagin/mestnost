@@ -73,7 +73,7 @@ export default {
         name: 'releases/AmbidextrousErrorism',
         artistName: 'Ambidextrous',
         releaseName: 'Errorism',
-        image: 'ambidextrous_cassete_1',
+        image: 'ambidextrous_cassette_1',
        },
        {
           name: 'releases/KoMaRealFace',

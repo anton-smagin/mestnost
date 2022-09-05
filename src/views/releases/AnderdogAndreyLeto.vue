@@ -66,24 +66,24 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="/static/anderdog_leto_cassete_1.jpg"
-          alt="anderdog leto cassete 1"
+          src="/static/anderdog_leto_cassette_1.jpg"
+          alt="anderdog leto cassette 1"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/anderdog_leto_cassete_2.jpg"
-          alt="anderdog leto cassete 2"
+          src="/static/anderdog_leto_cassette_2.jpg"
+          alt="anderdog leto cassette 2"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/anderdog_leto_cassete_3.jpg"
-          alt="anderdog leto cassete 3"
+          src="/static/anderdog_leto_cassette_3.jpg"
+          alt="anderdog leto cassette 3"
           width="90%"
           height="auto"
         />

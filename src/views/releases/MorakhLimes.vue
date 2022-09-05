@@ -75,24 +75,24 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="/static/morakh_cassete_1.jpg"
-          alt="morakh cassete 1"
+          src="/static/morakh_cassette_1.jpg"
+          alt="morakh cassette 1"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/morakh_cassete_2.jpg"
-          alt="morakh cassete 2"
+          src="/static/morakh_cassette_2.jpg"
+          alt="morakh cassette 2"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/morakh_cassete_3.jpg"
-          alt="morakh cassete 3"
+          src="/static/morakh_cassette_3.jpg"
+          alt="morakh cassette 3"
           width="90%"
           height="auto"
         />

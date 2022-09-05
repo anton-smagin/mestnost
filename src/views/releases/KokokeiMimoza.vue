@@ -66,32 +66,32 @@
         </div>
       </div>
     </div>
-    <!-- <div class="row mb-5">
+    <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="static/vvvedenskaya_cassete_1.jpg"
-          alt="vvedenskaya"
+          src="static/mimoza_cassette_1.jpg"
+          alt="mimoza cassette 1"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/vvvedenskaya_cassete_2.jpg"
-          alt="vvedenskaya"
+          src="/static/mimoza_cassette_2.jpg"
+          alt="mimoza cassette 2"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/static/vvvedenskaya_cassete_3.jpg"
-          alt="vvedenskaya"
+          src="/static/mimoza_cassette_3.jpg"
+          alt="mimoza cassette 3"
           width="90%"
           height="auto"
         />
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
